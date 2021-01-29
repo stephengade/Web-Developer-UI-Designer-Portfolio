@@ -1,0 +1,84 @@
+@media only screen and (max-width: 790px) { 
+    body, html {
+  font-size: 50%;
+    }
+}
+
+
+.footer {
+    background-color: $primary-color;
+    text-align: center;
+    padding: 8rem 3rem;
+    border-top-right-radius: 20%;
+    
+
+    h3 {
+        font-family: $body-font;
+        font-size: 4rem;
+        color: #fff;
+        margin: 3rem auto;
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+
+            &:hover {
+                font-size: 4.5rem;
+            }
+        }
+    }
+
+    p {
+        font-family: $text-font;
+        font-size: 3rem;
+        color: #ffffff;
+        margin-top: 1rem;
+    }
+}
+
+// FORM
+
+ .contact {
+       form {
+           display: flex;
+           flex-direction: column;
+
+           input, textarea {
+               width: 80%;
+               margin: 0 auto 2rem auto;
+               padding-bottom: 5px;
+               border-radius: 25px;
+               outline: none;
+               border-style: none;
+               font-family: $text-font;
+               text-align: center;
+               padding: 1.5rem;
+               font-size: 3.5rem;
+               
+
+               &::placeholder {
+                   font-family: $body-font;
+                   text-align: center;
+                   font-size: 3rem;
+               }
+           }
+
+           button {
+               width: 50%;
+               margin: 0 auto;
+               padding: 2rem;
+               font-family: $header-font;
+               font-size: 3rem;
+               background-color: #000;
+                   color: #fff;
+                   outline: none;
+                   border-style: none;
+               
+               &:hover {
+                   background-color: rgb(161, 148, 148);
+                   color: #fff;
+                    transform:skew(200deg);
+               }
+           }
+       }
+   }

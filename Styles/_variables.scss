@@ -1,0 +1,24 @@
+html, body {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+    $header-font: 'Niconne', cursive;
+    $body-font: 'Montez', cursive;
+    $text-font: 'Cormorant', serif;
+
+$primary-color: #ff24f8;
+
+#underline {
+  background-image: linear-gradient(0deg, #ff24f8 50%, transparent 10%);
+}
+

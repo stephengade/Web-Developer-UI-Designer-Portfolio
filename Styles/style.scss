@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Niconne&family=Cormorant&display=swap');
+
+@import './variables';
+@import './mobile';
+@import './modal';
+@import './about';
+@import './services';
+@import './project';
+@import './footer';
+
+
+// Website made by Stephen Gbolagade 
+// Check me on Github.com/stephengade
+// Check my website: stephengade.com
+
+    nav {
+        background-color: transparent;
+        min-height: 10vh;
+        min-width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+
+        .brand-logo {
+            align-self: center;
+        
+            h1 {
+                font-size: 3.5rem;
+                font-family: $header-font;
+                margin-left: 5rem;
+                text-transform: capitalize;
+
+                span {
+                    color: $primary-color;
+                    font-size: 5rem;
+                }
+
+               
+                
+                a {
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .menu {
+            align-self: center;
+
+            &-items {
+                display: flex;
+
+               .nav-links {
+                  margin-top: 2.3rem;
+                   font-size: 3rem;
+                   font-family: $body-font;
+                   margin-right: 5rem;
+                
+
+                   a {
+                       text-decoration: none;
+                       color: #000;
+
+                       &:hover {
+                           color: $primary-color;
+                       }
+                   }
+               }
+
+                .menu-toggler {
+                    display: none;
+                }
+
+               .nav-button {
+                   border-style: solid;
+                   border-color: $primary-color;
+                   padding: 0 0.5rem;
+                   border-radius: 20px;
+
+                   &:hover {
+                       border-color: #000;
+                   }
+                
+               }
+            }
+        }
+
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+        margin-top: 5vh;
+        height: auto;
+        width: 100%;
+        display: flex;
+        /*flex-direction: row;*/
+        flex-wrap: wrap;
+    
+        
+
+        .hero-text {
+           width: 50%;
+           text-align: center;
+           margin-top: 5rem;
+           line-height: 6.5rem;
+           margin: 0 auto;
+
+           h2 {
+               font-size: 5rem;
+               font-family: $header-font;
+               margin-top: 2rem;
+           }
+
+           h3 {
+               font-family: $body-font;
+               font-size: 6rem;
+               text-transform: capitalize;
+               margin-top: 2rem;
+               
+                  span {
+                      background-image: linear-gradient(0deg, #ff24f8 50%, transparent 10%);
+                  }
+
+           }
+
+           p {
+               font-size: 3rem;
+               font-family: $header-font;
+               margin: 2rem;
+
+           }
+
+           .hero-icons {
+               display: flex;
+                 flex-direction: colum;
+                 width: 30%;
+                 margin: 0 auto;
+            
+            a {
+                margin: 0 auto;
+
+               img {
+                    color: $primary-color;
+               }
+            }
+
+           }
+        }
+
+        .hero-image {
+            width: 50%;
+            
+            svg {
+                height: auto;
+                width: 100%;
+            }
+            
+        }
+    }
+
+
+
+#headboy {
+    animation: updown 1.5s ease infinite alternate;
+}
+
+#headgirl {
+    animation: updown 1.5s ease infinite alternate 1s;
+}
+
+
+    @keyframes updown {
+        from {
+      transform: translateX(0%);
+        }
+
+        to {
+ transform: translateX(-2%);
+        }
+    }
+
+
+
+ @keyframes downup {
+        from {
+      transform: translateX(0%);
+        }
+
+        to {
+ transform: translateX(-2%);
+        }
+    }
+
+
+// Website made by Stephen Gbolagade 
+// Check me on Github.com/stephengade
+// Check my website: stephengade.com
